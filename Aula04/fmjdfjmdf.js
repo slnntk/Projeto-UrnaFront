@@ -1,4 +1,4 @@
-const button = document.getElementById('myButton');
+const button = document.getElementById('button-search');
 const box = document.getElementById('numberTitulo')
 const dataContainer = document.getElementById('data-container');
 button.addEventListener('click', function() {
