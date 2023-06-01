@@ -3,11 +3,56 @@ h1 {
     cursor: copy;
 }
 
-button {
+#data-container {
+    background-color: #F4F4F4;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#data-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#data-container p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#data-container p:last-child {
+    margin-bottom: 0;
+}
+
+
+#button-search {
+    position: absolute;
+    top: 235px;
+    left: 60px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ECC71;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    width: 70px;
-    height: 50px;
-    animation-name: revert;
-    animation: forwards;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#button-search:add {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+#button-search:hover {
+    background-color: #27AE60;
+}
+
+#numberTitulo {
+    flex: 100px;
+    height: 30px;
+    width: 30px;
 }
 
