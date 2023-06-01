@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "number": 10,
+  "nome": "Gon Freecss",
+  "votos": 2,
+  "partido": {
+    "id": 1,
+    "name": "Uchiha",
+    "votosDoPartido": 2
+  },
+  "eleitores": [
+    {
+      "id": 1,
+      "titulo": 558132541,
+      "hasVoted": true
+    },
+    {
+      "id": 6,
+      "titulo": 390881858,
+      "hasVoted": true
+    }
+  ]
+}
