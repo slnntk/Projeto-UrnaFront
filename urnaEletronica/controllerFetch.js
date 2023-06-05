@@ -16,6 +16,7 @@ button.addEventListener('click', function() {
               <p>Voto: ${hasVoted}</p>
              `;
         })
+
         .catch(error => {
             console.log(error);
         });
