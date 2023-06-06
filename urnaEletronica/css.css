@@ -1,60 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 h1 {
-    color: blue;
-    cursor: copy;
+    text-align: center;
 }
 
 #data-container {
-    padding: 10px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 400px;
 }
 
-#data-container h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-#data-container p {
+input[type="text"] {
+    padding: 10px;
     font-size: 16px;
-    margin-bottom: 0px;
+    width: 200px;
+    margin-right: 10px;
 }
 
-#data-container p:last-child {
-    margin-bottom: 0px;
-}
-
-
-#button-search {
-    position: absolute;
-    top: 235px;
-    left: 130px;
-    display: inline-block;
+button {
     padding: 10px 20px;
-    background-color: #2ECC71;
-    color: #fff;
     font-size: 16px;
-    font-weight: bold;
+    background-color: #4caf50;
+    color: #fff;
+    margin-top: 3px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#button-search:add {
-    box-shadow: none;
-    transform: translateY(2px);
+button:hover {
+    background-color: #45a049;
 }
 
-#button-search:hover {
-    background-color: #27AE60;
+button:focus {
+    outline: none;
 }
 
-#numberTitulo {
-    position: absolute;
-    top: 235px;
-    left: 10px;
-    display: inline-block;
-    padding: 4px 20px;
-    height: 30px;
-    width: 60px;
+.error-message {
+    color: red;
+    margin-top: 10px;
 }
-
