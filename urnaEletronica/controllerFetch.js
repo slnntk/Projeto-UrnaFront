@@ -41,7 +41,6 @@ function searchEleitorButton(){
 function searchCandidateButton(){
     buttonCandidate.addEventListener('click', function (){
         const numberCandidate = boxCandidate.value;
-        console.log(numberCandidate);
         consultaCandidate(numberCandidate);
     })
 }
@@ -89,7 +88,6 @@ async function consultaEleitor(numberOfTitulo){
         if (retorno.status === 404) {
             throw new Error('Eleitor não encontrado');
         }
-
         const voter = await retorno.json();
         const titulo = voter.titulo;
         const hasVoted = voter.hasVoted;
@@ -123,11 +121,9 @@ async function consultaCandidate(numberOfCandidato){
         document.getElementById('candidate-name').textContent = candidatoNome;
         document.getElementById('candidate-number').textContent = candidatoNumero;
         document.getElementById('candidate-partido').textContent = partidoNome;
-
         if (retorno.status === 200){
             voteButton();
         }
-
     } catch (error) {
         showAlert(error.message);
     }
