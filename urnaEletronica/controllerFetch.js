@@ -70,11 +70,11 @@ async function vote() {
         if (retorno.ok) {
             const eleitorPage = document.getElementById('eleitor-page');
             const candidatePage = document.getElementById('candidate-page');
+            const confirmPage = document.getElementById('confirmation-screen')
 
             eleitorPage.style.display = 'none';
             candidatePage.style.display = 'none';
-
-            showAlert('Voto computado com sucesso');
+            confirmPage.style.display = 'flex';
         }
     } catch (error) {
         showAlert(error.message);
@@ -134,41 +134,3 @@ async function consultaCandidate(numberOfCandidato){
 }
 
 
-
-/**
-button.addEventListener('click', function() {
-    const number = box.value;
-
-    fetch(`http://localhost:8080/eleitores/titulo/${number}`, {
-        method: 'GET'
-    })
-        .then(response => response.json())
-        .then(data => {
-            const { titulo, hasVoted } = data;
-
-            if (hasVoted === true) {
-                showAlert(VOTER_ALREADY_VOTED_ALERT);
-            } else if (titulo === undefined) {
-                showAlert(VOTER_NOT_EXIST_ALERT);
-            } else {
-                dataContainer.innerHTML = `    
-                    <p>Titulo: ${titulo}</p>
-                    <p>Voto: ${hasVoted}</p>
-                `;
-                showTab(tabVote); // Mostrar aba de Votação
-                hideTab(tabEleitor); // Ocultar aba de Eleitor
-            }
-        })
-        .catch(error => {
-            console.log(error);
-        });
-});
-
-function showTab(tab) {
-    tab.classList.add('active');
-}
-
-function hideTab(tab) {
-    tab.classList.remove('active');
-}
-**/

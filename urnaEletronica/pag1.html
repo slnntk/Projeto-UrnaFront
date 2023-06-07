@@ -2,48 +2,50 @@
 <html lang="pt_br">
 <head>
     <meta charset="UTF-8">
-    <title>Oi</title>
+    <title>Urna Eletrônica</title>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
+<div id="alert-container"></div>
 
-            <div id="alert-container"></div>
-
-
-            <div id="eleitor-page">
-                <h1>Urna Eletronica</h1>
-                <input id="numberTitulo">
-                <button id="button-search-voter">SEARCH</button>
-                <div id="votation">
-                    <div id="voter-box">
-                        <h2>Informações do Eleitor</h2>
-                        <div id="voter-info">
-                            <p id="voter-title"></p>
-                            <p id="voter-hasVoted"></p>
-                        </div>
-                    </div>
-                </div>
+<div id="eleitor-page" class="box">
+    <h1>Urna Eletrônica</h1>
+    <input id="numberTitulo">
+    <button id="button-search-voter">SEARCH</button>
+    <div id="votation">
+        <div id="voter-box" class="box">
+            <h2>Informações do Eleitor</h2>
+            <div id="voter-info">
+                <p id="voter-title"></p>
+                <p id="voter-hasVoted"></p>
             </div>
+        </div>
+    </div>
+</div>
 
+<div id="confirmation-screen" style="display: none" class="confirmation-box">
+    <div class="confirmation-box">
+        <p>VOTO COMPUTADO</p>
+    </div>
+</div>
 
-            <div id="candidate-page" style="display: none;">
-                        <h1>Urna Eletronica</h1>
-                        <input id="numberOfCandidato">
-                        <button id="button-search-candidate">SEARCH</button>
-                        <div id="candidate">
-                            <div id="candidate-box">
-                                <h2>Informações do Candidato</h2>
-                                <div id="candidate-info">
-                                    <p id="candidate-name"></p>
-                                    <p id="candidate-partido"></p>
-                                    <p id="candidate-number"></p>
-                                </div>
-                                <button id="button-vote">Votar</button>
-                            </div>
-                        </div>
-                    </div>
+<div id="candidate-page" style="display: none" class="box">
+    <h1>Urna Eletrônica</h1>
+    <input id="numberOfCandidato">
+    <button id="button-search-candidate">SEARCH</button>
+    <div id="candidate">
+        <div id="candidate-box">
+            <h2>Informações do Candidato</h2>
+            <div id="candidate-info">
+                <p id="candidate-name"></p>
+                <p id="candidate-partido"></p>
+                <p id="candidate-number"></p>
+            </div>
+            <button id="button-vote">Votar</button>
+        </div>
+    </div>
+</div>
 
-
-        <script src="controllerFetch.js"></script>
+<script src="controllerFetch.js"></script>
 </body>
 </html>
