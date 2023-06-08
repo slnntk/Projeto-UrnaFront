@@ -127,6 +127,13 @@ button:focus {
     outline: none;
 }
 
+#voter-box,
+#candidate-box,
+#confirmation-screen {
+    margin: 0 auto;
+    text-align: center;
+}
+
 #voter-box {
     width: 300px;
     border: 1px solid #ccc;

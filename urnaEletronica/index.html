@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Urna Eletrônica</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="urnaeletronica.css">
 </head>
 <body>
 <div id="alert-container"></div>
@@ -26,6 +26,7 @@
 <div id="confirmation-screen" style="display: none" class="confirmation-box">
     <div class="confirmation-box">
         <p>VOTO COMPUTADO</p>
+        <button onclick="closeConfirmationScreen()", id="confirmation-button">Fechar</button>
     </div>
 </div>
 
@@ -47,6 +48,6 @@
     </div>
 </div>
 
-<script src="controllerFetch.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

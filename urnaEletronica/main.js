@@ -1,6 +1,7 @@
 const buttonEleitor = document.getElementById('button-search-voter');
 const buttonCandidate = document.getElementById('button-search-candidate');
 const buttonVote = document.getElementById('button-vote');
+const buttonClose = document.getElementById('confirmation-button');
 
 const box = document.getElementById('numberTitulo');
 const boxCandidate = document.getElementById('numberOfCandidato');
@@ -45,6 +46,12 @@ function searchCandidateButton(){
     })
 }
 
+function closeConfirmationScreen(){
+    buttonClose.addEventListener('click', function (){
+        location.reload();
+    })
+}
+
 function voteButton(){
     buttonVote.addEventListener('click', function (){
         if (document.getElementById('voter-hasVoted').textContent === true){
@@ -55,6 +62,8 @@ function voteButton(){
         }
     })
 }
+
+
 
 async function vote() {
     try {
