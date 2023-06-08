@@ -161,64 +161,41 @@ button:focus {
     flex-direction: column;
     align-items: flex-start;
 }
-
-#candidate-details {
-    margin-bottom: 20px;
-}
-
 #candidate-photo {
     display: none;
     width: 100px;
     height: 100px;
     border-radius: 50%;
     object-fit: cover;
-    margin-left: 20px;
     margin-bottom: 20px;
+    position: relative;
+    top: -3px;
+    right: -170px;
 }
+
 
 #candidate-details {
     margin-bottom: 20px;
 }
 
 #candidate-name {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: -100px 0 10px 0;
 }
 
 #candidate-partido {
     font-size: 16px;
     font-weight: bold;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: -9px 0 10px 0;
 }
 
 #candidate-number {
     font-size: 16px;
     font-weight: bold;
-    margin: 0;
-    margin-bottom: 0;
+    margin: -9px 0 10px 0;
 }
 
-#button-vote {
-    padding: 12px 24px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-}
 
-#button-vote:hover {
-    background-color: #45a049;
-}
 
-#button-vote:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
-}
 
