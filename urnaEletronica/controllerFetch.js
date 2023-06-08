@@ -121,6 +121,10 @@ async function consultaCandidate(numberOfCandidato){
         document.getElementById('candidate-name').textContent = candidatoNome;
         document.getElementById('candidate-number').textContent = candidatoNumero;
         document.getElementById('candidate-partido').textContent = partidoNome;
+        const candidatePhoto = document.getElementById('candidate-photo');
+        candidatePhoto.src = voter.fotoUrl;
+        candidatePhoto.style.display = 'block';
+
         if (retorno.status === 200){
             voteButton();
         }
