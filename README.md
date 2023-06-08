@@ -11,7 +11,11 @@ Fiquei muito satisfeito em concluir o projeto, e o resultado da integração fic
 Este projeto tem sido uma experiência enriquecedora, que me proporcionou a oportunidade de aplicar meus conhecimentos adquiridos e fortalecer minhas habilidades de desenvolvimento. Estou entusiasmado com o progresso que tenho feito e ansioso para continuar aprendendo e aprimorando minhas capacidades nessa área.
 
 ## Imagens
-![IMG1](https://github.com/slnntk/Projeto-UrnaEletronica/blob/main/imgs/conjunto.png)
+![IMG1](https://github.com/slnntk/Projeto-UrnaEletronica/blob/main/imgs/Screenshot_1.png)
+![IMG1](https://github.com/slnntk/Projeto-UrnaEletronica/blob/main/imgs/Screenshot_2.png)
+![IMG1](https://github.com/slnntk/Projeto-UrnaEletronica/blob/main/imgs/Screenshot_3.png)
+-
+![IMG1](https://github.com/slnntk/Projeto-UrnaEletronica/blob/main/imgs/Screenshot_4.png)
 
 # Tecnologias utilizadas
 ## Front end
